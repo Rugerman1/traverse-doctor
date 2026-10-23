@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "traverse-doctor"
+version = "0.1.0"
+description = "Windows desktop tool for closed traverse closure, compass/transit/least squares adjustment, blunder finding and DXF output"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+dependencies = [
+    "numpy>=1.26",
+    "matplotlib>=3.8",
+    "reportlab>=4.0",
+    "ezdxf>=1.1",
+    "PySide6>=6.6",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "pyinstaller>=6.6"]
+
+[project.scripts]
+traverse-doctor = "traverse_doctor.ui.main_window:main"
+
+[tool.setuptools.packages.find]
+include = ["traverse_doctor*"]
+
+[tool.setuptools.package-data]
+"traverse_doctor" = ["examples/*.csv"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

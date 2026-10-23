@@ -1,0 +1,29 @@
+# Traverse Doctor example: the site loop with one angle misread by a degree at C
+# project = Example with an angle blunder at C
+# start_n = 5000.00
+# start_e = 5000.00
+# start_direction = S 49 19 13 E   (course from A to B, from a GPS pair)
+# angles = right   (interior angles turned right, loop runs counterclockwise)
+# units = ft
+# sigma_angle = 5
+# sigma_distance = 0.01
+# sigma_ppm = 3
+# required_precision = 10000
+Type,Station,From,BS,Angle,Distance,Code,Description
+TRAV,A,,,106-15-57,641.40,CP,Mag nail in curb
+TRAV,B,,,113-23-03,705.16,IPS,5/8 in rebar set
+TRAV,C,,,97-45-44,658.26,IPS,5/8 in rebar set
+TRAV,D,,,120-19-45,628.61,CP,PK nail in asphalt
+TRAV,E,,,103-15-33,695.93,IPF,1/2 in pipe found
+SS,101,A,E,35-10-20,85.42,EP1 B,Edge of pavement
+SS,102,A,E,60-05-10,120.18,EP1,
+SS,103,A,E,82-44-00,171.90,EP1 E,
+SS,104,B,A,40-12-30,62.75,BLDG B,Building corner
+SS,105,B,A,58-40-10,96.30,BLDG,
+SS,106,B,A,70-15-45,74.12,BLDG C,
+SS,107,C,B,25-30-00,48.20,TREE,24 in oak
+SS,108,C,B,47-18-25,110.55,MH,Sanitary manhole
+SS,109,D,C,30-02-15,55.80,HYD,Fire hydrant
+SS,110,D,C,64-45-30,140.10,FENCE B,Chain link
+SS,111,D,C,80-10-05,190.42,FENCE,
+SS,112,E,D,22-55-40,77.65,PP,Power pole

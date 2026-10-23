@@ -1,0 +1,13 @@
+# Traverse Doctor example: raw total station export (slope distance and zenith), with a distance blunder on D-E
+# project = Example with a distance blunder
+# start_n = 5000.00
+# start_e = 5000.00
+# start_direction = S 49 19 13 E
+# angles = right
+# units = ft
+Point,HA,SD,ZA,Code
+A,106-15-57,641.543,91-12-30,CP
+B,113-23-03,705.327,88-45-10,CP
+C,96-45-44,658.285,90-30-05,CP
+D,120-19-45,638.651,89-20-40,CP
+E,103-15-33,696.392,92-05-15,CP
